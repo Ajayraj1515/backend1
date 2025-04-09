@@ -1,7 +1,8 @@
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-const jobRoutes = require('./routes/jobs');
+const jobRoutes = require('./routes/jobs'); // ✅ No curly braces here
+
 
 const app = express();
 app.use(cors());
