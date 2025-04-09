@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const jobController = require('../controllers/jobController'); // ✅ Correct import path
-console.log("Job Controller:", jobController);
+const jobController = require('../controllers/jobController');
+
 router.post('/', jobController.createJob);
 router.get('/', jobController.getJobs);
 
